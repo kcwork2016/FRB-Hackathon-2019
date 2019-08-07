@@ -38,7 +38,7 @@ function StoryCard(props) {
                     />
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Federal Reserve System
+                            { cardTitle }
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
                             { cardText }
