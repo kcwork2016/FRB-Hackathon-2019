@@ -13,8 +13,8 @@ const styles = theme => ({
         width: 'auto',
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
-        [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
-            width: 1100,
+        [theme.breakpoints.up(880 + theme.spacing.unit * 3 * 2)]: {
+            width: 880,
             marginLeft: 'auto',
             marginRight: 'auto',
         },
@@ -31,7 +31,7 @@ function StoryCard(props) {
                     <CardMedia
                         component="img"
                         alt="Contemplative Reptile"
-                        height="280"
+                        height="500"
                         width="100"
                         image = { cardImage }
                         title= { cardTitle }
