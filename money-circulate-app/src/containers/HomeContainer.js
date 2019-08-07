@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import StoryCard from '../components/StoryCard';
 import '../services/mockData';
 import {createData} from "../services/mockData";
+import arrayMove from 'array-move';
 
 export default class HomeContainer extends Component {
 
@@ -16,23 +17,36 @@ export default class HomeContainer extends Component {
             cardText:" The Federal Reserve System is the central banking system of the United States of America.\n" +
             "It was created on December 23, 1913, with the enactment of the Federal Reserve Act,\n" +
             "after a series of financial panics led to the desire for central control of the monetary system",
-            cardTitle: "FED"
+            cardTitle: "FED",
+            serialNum:"A1223198"
         };
     };
 
 
+
     componentDidMount() {
-        getBackendData();
+        this.setState({});
+        this.state.serialNum = randumNum(90000, 10000);
+        let mockDatas = createData(); //mock data
+        // arrayMove(mockDatas, 1, 5);
     }
 
     render() {
-        let mockDatas = createData();
-        console.log(mockDatas);
+        let mockDatas1 = createData(); //mock data
+        // let mockDatas = getBackendData(); //service data
+
+        let strI = randumNum(7, null);
+        let endI = randumNum(7, null);
+        let mockDatas = arrayMove(mockDatas1, strI, endI);
+        console.log("mock data check: "+ mockDatas);
 
         return (
             <div className="div-home-container">
 
-                <Header/>
+                <Header
+                    serialNum = {this.state.serialNum }
+                />
+
                 <div>
                     {   mockDatas.map((mockData) => {
                         return <StoryCard
@@ -54,11 +68,30 @@ export default class HomeContainer extends Component {
 };
 
 function getBackendData() {
+    const API = 'https://96befd27-4ecd-40b4-97a7-401231e82ba5.mock.pstmn.io/getStory'
     let backendData;
-    fetch(' https://638ed8c6-c636-44b4-be5b-e9bc525f5e9b.mock.pstmn.io/getStory')
-        .then(results => {
-            return backendData = results.json();
+    // fetch(API)
+    //     .then(response => {
+    //          backendData = response.json()
+    //     .then(data=> backendData);
+    //         return backendData;
+    //     });
+
+
+    fetch(API)
+        .then(function(response) {
+            backendData = response.json();
+            return backendData;
         })
+        .then(function(myJson) {
+            console.log(JSON.stringify(myJson));
+      return myJson;
+        });
+
+}
+
+function randumNum(max, min) {
+    return Math.floor(Math.random() * max) + min;
 }
 
 

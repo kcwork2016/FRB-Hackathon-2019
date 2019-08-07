@@ -8,7 +8,6 @@
       <change afterPath="$PROJECT_DIR$/src/components/Footer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/StoryCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StoryCardCollection.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/containers/HomeContainer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/services/mockData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
@@ -32,73 +31,62 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="HomeContainer.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/containers/HomeContainer.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="mockData.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/mockData.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="7" selection-start-column="7" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="StoryCard.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/StoryCard.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="StoryCardCollection.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/StoryCardCollection.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Header.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/Header.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HomeContainer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/HomeContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib.es5.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="1058" column="4" selection-start-line="1058" selection-start-column="4" selection-end-line="1058" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mockData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/mockData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StoryCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/StoryCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="449">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -147,9 +135,9 @@
         <option value="$PROJECT_DIR$/src/components/Footer.js" />
         <option value="$PROJECT_DIR$/src/services/CardObj.js" />
         <option value="$PROJECT_DIR$/src/services/mockData.js" />
-        <option value="$PROJECT_DIR$/src/containers/HomeContainer.js" />
-        <option value="$PROJECT_DIR$/src/components/Header.js" />
         <option value="$PROJECT_DIR$/src/components/StoryCard.js" />
+        <option value="$PROJECT_DIR$/src/components/Header.js" />
+        <option value="$PROJECT_DIR$/src/containers/HomeContainer.js" />
       </list>
     </option>
   </component>
@@ -293,27 +281,27 @@
       <updated>1565051574786</updated>
       <workItem from="1565051577782" duration="7934000" />
       <workItem from="1565063746476" duration="11308000" />
-      <workItem from="1565113579438" duration="11736000" />
+      <workItem from="1565113579438" duration="17515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30978000" />
+    <option name="totallyTimeSpent" value="36757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="12" y="23" width="1633" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70408165" visible="true" weight="0.13399504" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70458406" visible="true" weight="0.13399504" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21689498" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21689498" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info id="npm" order="2" sideWeight="0.29591838" side_tool="true" visible="true" weight="0.13399504" />
+      <window_info id="npm" order="2" sideWeight="0.29541597" side_tool="true" visible="true" weight="0.13399504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24970368" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32762557" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32762557" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="right" id="Palette" order="3" />
@@ -342,7 +330,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -607,36 +595,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="1313" column="2" lean-forward="true" selection-start-line="1313" selection-start-column="2" selection-end-line="1313" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/cardData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/mockData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/HomeContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,22 +615,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+    <entry file="file://$PROJECT_DIR$/src/components/StoryCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="30" />
+        <state relative-caret-position="449">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/StoryCard.js">
+    <entry file="file://$PROJECT_DIR$/src/services/mockData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="35" />
+        <state relative-caret-position="425">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="59" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/typescript/lib/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="1058" column="4" selection-start-line="1058" selection-start-column="4" selection-end-line="1058" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HomeContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

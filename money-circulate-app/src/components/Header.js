@@ -35,7 +35,7 @@ const styles = theme => ({
 
 
 function Header (props) {
-    const { classes } = props;
+    const { serialNum, classes } = props;
 
     return (
             <div className={classes.layout}>
@@ -58,7 +58,7 @@ function Header (props) {
                             <Grid item md={6}>
                                 <div className={classes.mainFeaturedPostContent}>
                                     <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                                        Serial#: A1223198
+                                        Serial#: {serialNum}
                                     </Typography>
                                     <Typography variant="h5" color="inherit" paragraph>
                                         See the story about money below:
