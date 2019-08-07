@@ -1,109 +1,50 @@
+import {randumNum} from '../utils/util'
+
+
 export function createData() {
 
     let mockBackendDatas = [
         {
             cardId: "0",
             cardImage: "https://media.istockphoto.com/photos/bank-picture-id626702872",
-            cardText: "card text 0",
-            cardTitle: "card title 0"
+            cardText: "",
+            cardTitle: ""+mockStartDate0()+" "+mockPintIn1()
         },
 
         {
             cardId: "1",
-            cardImage: "https://media.istockphoto.com/photos/bank-counter-picture-id636202058",
-            cardText: "card text 1",
-            cardTitle: "card title 1"
+            cardImage: "https://media.istockphoto.com/photos/capitol-building-in-washington-dc-picture-id641964952",
+            cardText: "",
+            cardTitle: ""+mockSendTo2()
         },
         {
             cardId: "2",
-            cardImage: "https://media.istockphoto.com/photos/couple-talking-to-loan-officer-and-shaking-hands-picture-id674650850",
-            cardText: "card text 2",
-            cardTitle: "card title 2"
+            cardImage: "https://media.istockphoto.com/photos/bank-doorway-picture-id1008926982",
+            cardText: "",
+            cardTitle: ""+mockBankName3()
         },
         {
             cardId: "3",
             cardImage: "https://media.istockphoto.com/photos/sun-shines-through-the-colonnade-of-the-royal-exchange-building-in-picture-id827715068",
-            cardText: "card text 3",
-            cardTitle: "card title 3"
+            cardText: "",
+            cardTitle: ""+mockBankIn4()
         },
         {
             cardId: "4",
-            cardImage: "https://media.istockphoto.com/photos/discussing-the-new-marketing-strategy-picture-id638953230",
-            cardText: "card text 4",
-            cardTitle: "card title 4"
+            cardImage: "https://media.istockphoto.com/photos/cardboard-boxes-on-conveyor-roller-in-distribution-warehouse-delivery-picture-id1046521978",
+            cardText: "",
+            cardTitle: ""+mockFirstUseAt5()
         },
         {
             cardId: "5",
-            cardImage: "https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654",
-            cardText: "card text 5",
-            cardTitle: "card title 5"
-        },
-        {
-            cardId: "6",
-            cardImage: "https://media.istockphoto.com/photos/stack-of-multicolored-credit-cards-closeup-picture-id903663312",
-            cardText: "card text 6",
-            cardTitle: "card title 6"
-        },
-        {
-            cardId: "7",
-            cardImage: "https://media.istockphoto.com/photos/stack-of-multicolored-credit-cards-closeup-picture-id903663312",
-            cardText: "card text 7",
-            cardTitle: "card title 7"
-        },
+            cardImage: "https://media.istockphoto.com/photos/group-of-happy-people-looking-at-camera-picture-id1029925066",
+            cardText: "",
+            cardTitle: ""+mockFirstUseBy6()
+        }
     ];
 
 
-    let newMockBackendDatas = [
-        {
-            cardId: "0",
-            cardImage: "https://media.istockphoto.com/photos/bank-picture-id626702872",
-            cardText: "card text 0",
-            cardTitle: "card title 0"
-        },
 
-        {
-            cardId: "1",
-            cardImage: "https://media.istockphoto.com/photos/bank-counter-picture-id636202058",
-            cardText: "card text 1",
-            cardTitle: "card title 1"
-        },
-        {
-            cardId: "2",
-            cardImage: "https://media.istockphoto.com/photos/couple-talking-to-loan-officer-and-shaking-hands-picture-id674650850",
-            cardText: "card text 2",
-            cardTitle: "card title 2"
-        },
-        {
-            cardId: "3",
-            cardImage: "https://media.istockphoto.com/photos/sun-shines-through-the-colonnade-of-the-royal-exchange-building-in-picture-id827715068",
-            cardText: "card text 3",
-            cardTitle: "card title 3"
-        },
-        {
-            cardId: "4",
-            cardImage: "https://media.istockphoto.com/photos/discussing-the-new-marketing-strategy-picture-id638953230",
-            cardText: "card text 4",
-            cardTitle: "card title 4"
-        },
-        {
-            cardId: "5",
-            cardImage: "https://media.istockphoto.com/photos/technical-financial-graph-on-technology-abstract-background-picture-id639666654",
-            cardText: "card text 5",
-            cardTitle: "card title 5"
-        },
-        {
-            cardId: "6",
-            cardImage: "https://media.istockphoto.com/photos/stack-of-multicolored-credit-cards-closeup-picture-id903663312",
-            cardText: "card text 6",
-            cardTitle: "card title 6"
-        },
-        {
-            cardId: "7",
-            cardImage: "https://media.istockphoto.com/photos/stack-of-multicolored-credit-cards-closeup-picture-id903663312",
-            cardText: "card text 7",
-            cardTitle: "card title 7"
-        },
-    ];
 
     return mockBackendDatas;
 }
@@ -149,7 +90,9 @@ export function mockEndDate7() {
         "2/11/18",
         "1/27/18" ];
 
-return endDate7;
+    let endDateRan = randumNum(35, null);
+
+return endDate7[endDateRan];
 
 }
 
@@ -194,14 +137,17 @@ export function mockStartDate0() {
         "11/10/82",
         "11/25/81",
     ];
-    return printOnDate0;
+
+    let r = randumNum(35, null);
+    return printOnDate0[r];
 }
 
 export function mockPintIn1() {
     let printIn1 = [
         "DC", "Texas"
     ];
-    return printIn1;
+    let r = randumNum(1, 0);
+    return printIn1[r];
 }
 
 export function mockSendTo2() {
@@ -245,7 +191,8 @@ export function mockSendTo2() {
         "Dallas",
     ];
 
-    return mockSendTo2;
+    let r = randumNum(35, null);
+    return sendTo2[r];
 }
 
 export function mockBankName3() {
@@ -258,8 +205,9 @@ export function mockBankName3() {
         "Regions-Bank",
         "State-Bank",
         "US-Bank"
-]
-    return bankName3;
+];
+    let r = randumNum(7, null);
+    return bankName3[r];
 }
 
 export function mockBankIn4 () {
@@ -303,7 +251,8 @@ export function mockBankIn4 () {
         "Cincinnati,OH",
         "Denton,TX"
     ];
-    return bankIn4;
+    let r = randumNum(35, null);
+    return bankIn4[r];
 }
 
 export function mockFirstUseAt5() {
@@ -347,11 +296,12 @@ export function mockFirstUseAt5() {
         "Car-rental",
         "Car-Repair"
     ];
-    return firstUseAt5;
+    let r = randumNum(35, null);
+    return firstUseAt5[r];
 }
 
 export function mockFirstUseBy6() {
-    let firstUseBy6 =[
+    let firstUseBy6 = [
         "18-year-old-boy",
         "18-year-old-girl",
         "Elderly-woman",
@@ -391,5 +341,19 @@ export function mockFirstUseBy6() {
         "Truck-Driver",
         "Cab-Driver"
     ];
-    return firstUseBy6;
+    let r = randumNum(35, null);
+    return firstUseBy6[r];
 }
+
+
+    export function mockS3ImageUrl() {
+
+        let s3ImageUrl10 = [
+            "https://media.istockphoto.com/photos/bank-picture-id626702872",
+     ];
+
+        let endDateRan = randumNum(10, null);
+
+        return s3ImageUrl10[endDateRan];
+
+    }

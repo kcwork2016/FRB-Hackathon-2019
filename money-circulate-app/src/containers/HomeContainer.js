@@ -37,15 +37,18 @@ export default class HomeContainer extends Component {
 
     render() {
         let mockDatas1 = createData(); //mock data
-        // let mockDatas = getBackendData(); //service data
 
-        let strI = randumNum(7, null);
-        let endI = randumNum(7, null);
-        let mockDatas = arrayMove(mockDatas1, strI, endI);
+        // let strI = randumNum(7, null);
+        // let endI = randumNum(7, null);
+        // let mockDatas = arrayMove(mockDatas1, strI, endI);
+        // let mockDatas = mockDatas1;
+            let mockDatas = mockDatas1
+                //arrayMove(mockDatas1, strI, endI);
+
         console.log("mock data check: "+ mockDatas);
 
-        let endDateRan = randumNum(40, null);
-        let endDate7 = mockEndDate7();
+
+
         return (
             <div className="div-home-container">
 
@@ -70,7 +73,7 @@ export default class HomeContainer extends Component {
                     <StoryCard
                         cardId = { this.state.cardId }
                         cardImage = { this.state.cardImage }
-                        cardText = { this.state.cardText + endDate7[endDateRan]}
+                        cardText = { this.state.cardText + mockEndDate7()}
                         cardTitle = { this.state.cardTitle }
                     />
                 </div>
