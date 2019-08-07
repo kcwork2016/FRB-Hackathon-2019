@@ -3,7 +3,10 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import StoryCard from '../components/StoryCard';
 import '../services/mockData';
-import {createData} from "../services/mockData";
+import {createData, mockEndDate7, mockStartDate0, mockPintIn1,
+    mockSendTo2, mockBankName3, mockBankIn4, mockFirstUseAt5,
+    mockFirstUseBy6} from "../services/mockData";
+import {getAWSData, getBackendData} from '../services/backendServices'
 import arrayMove from 'array-move';
 
 export default class HomeContainer extends Component {
@@ -13,20 +16,21 @@ export default class HomeContainer extends Component {
         this.state = {
             results:"",
             cardId:"0",
-            cardImage: "https://media.istockphoto.com/photos/bank-picture-id626702872",
-            cardText:" The Federal Reserve System is the central banking system of the United States of America.\n" +
-            "It was created on December 23, 1913, with the enactment of the Federal Reserve Act,\n" +
-            "after a series of financial panics led to the desire for central control of the monetary system",
-            cardTitle: "FED",
-            serialNum:"A1223198"
+            cardImage: "https://cdn.coingape.com/wp-content/uploads/2018/08/29232851/bitcoin89-678x356.jpg",
+            cardText:"Shred date: ",
+            cardTitle: "Federal Reserve Bank of St Louis",
+            headerSerialNum:"A1223198",
+            headerValue: "89"
         };
     };
 
 
-
     componentDidMount() {
+        getAWSData();
+        getBackendData();
         this.setState({});
-        this.state.serialNum = randumNum(90000, 10000);
+        this.state.headerSerialNum = randumNum(90000, 10000);
+        this.state.headerValue = randumNum(150, 19);
         let mockDatas = createData(); //mock data
         // arrayMove(mockDatas, 1, 5);
     }
@@ -40,11 +44,14 @@ export default class HomeContainer extends Component {
         let mockDatas = arrayMove(mockDatas1, strI, endI);
         console.log("mock data check: "+ mockDatas);
 
+        let endDateRan = randumNum(40, null);
+        let endDate7 = mockEndDate7();
         return (
             <div className="div-home-container">
 
                 <Header
-                    serialNum = {this.state.serialNum }
+                    headerSerialNum = {this.state.headerSerialNum }
+                    headerValue = {this.state.headerValue}
                 />
 
                 <div>
@@ -54,9 +61,18 @@ export default class HomeContainer extends Component {
                             cardId = { mockData.cardId }
                             cardImage = { mockData.cardImage }
                             cardText = { mockData.cardText }
-                            cardType = { mockData.cardTitle }
+                            cardTitle = { mockData.cardTitle }
                         />
                     })}
+                </div>
+
+                <div>
+                    <StoryCard
+                        cardId = { this.state.cardId }
+                        cardImage = { this.state.cardImage }
+                        cardText = { this.state.cardText + endDate7[endDateRan]}
+                        cardTitle = { this.state.cardTitle }
+                    />
                 </div>
 
                 <Footer/>
@@ -66,29 +82,6 @@ export default class HomeContainer extends Component {
 
 
 };
-
-function getBackendData() {
-    const API = 'https://96befd27-4ecd-40b4-97a7-401231e82ba5.mock.pstmn.io/getStory'
-    let backendData;
-    // fetch(API)
-    //     .then(response => {
-    //          backendData = response.json()
-    //     .then(data=> backendData);
-    //         return backendData;
-    //     });
-
-
-    fetch(API)
-        .then(function(response) {
-            backendData = response.json();
-            return backendData;
-        })
-        .then(function(myJson) {
-            console.log(JSON.stringify(myJson));
-      return myJson;
-        });
-
-}
 
 function randumNum(max, min) {
     return Math.floor(Math.random() * max) + min;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import CardMedia from '@material-ui/core/CardMedia';
 import Toolbar from '@material-ui/core/Toolbar';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
@@ -35,22 +36,30 @@ const styles = theme => ({
 
 
 function Header (props) {
-    const { serialNum, classes } = props;
+    const { headerSerialNum, headerValue, classes } = props;
 
     return (
             <div className={classes.layout}>
-                <Toolbar>
-                    <Typography
-                        component="h2"
-                        variant="h5"
-                        color="inherit"
-                        align="center"
-                        noWrap
-                        className={classes.toolbarTitle}
-                    >
-                        Money Circulate App
-                    </Typography>
-                </Toolbar>
+                {/*<Toolbar>*/}
+                    {/*<Typography*/}
+                        {/*component="h2"*/}
+                        {/*variant="h5"*/}
+                        {/*color="inherit"*/}
+                        {/*align="center"*/}
+                        {/*noWrap*/}
+                        {/*className={classes.toolbarTitle}*/}
+                    {/*>*/}
+                        {/*Money Circulate App*/}
+                    {/*</Typography>*/}
+                {/*</Toolbar>*/}
+                <CardMedia
+                    component="img"
+                    alt="Contemplative Reptile"
+                    height="320"
+                    width="100"
+                    image = { "https://team5graphics.s3.amazonaws.com/travelinbillgraphic.PNG" }
+                    title= { "travelinbillgraphic" }
+                />
                 <main>
                     {/* Main featured post */}
                     <Paper className={classes.mainFeaturedPost}>
@@ -58,15 +67,24 @@ function Header (props) {
                             <Grid item md={6}>
                                 <div className={classes.mainFeaturedPostContent}>
                                     <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                                        Serial#: {serialNum}
+                                        Serial#: {headerSerialNum}
                                     </Typography>
                                     <Typography variant="h5" color="inherit" paragraph>
-                                        See the story about money below:
+                                        Value of money in the bag: ${headerValue}
                                     </Typography>
                                 </div>
                             </Grid>
                         </Grid>
+                        <CardMedia
+                            component="img"
+                            alt="Contemplative Reptile"
+                            height="500"
+                            width="100"
+                            image = { "https://team5graphics.s3.amazonaws.com/Lifeline.PNG" }
+                            title= { "Lifeline" }
+                        />
                     </Paper>
+
                 </main>
             </div>
 
